@@ -1,9 +1,7 @@
 name: Publish Koodo-Reader Docker image
 
 on:   # 配置触发workflow的事件
-  push:
-    paths:   # 这里是用来指定哪个文件更改，才会触发的
-      - 'koodo-reader/Dockerfile'
+  workflow_dispatch:  #只允许手动触发
 
 env:
   APP_NAME: koodo-reader
@@ -48,4 +46,3 @@ jobs:
           tags: |
             ${{ env.DOCKERHUB_REPO }}:latest
             ${{ env.DOCKERHUB_REPO }}:${{ env.APP_VERSION }}
-            
