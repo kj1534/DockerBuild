@@ -3,7 +3,7 @@ name: Publish Koodo-Reader Docker image
 on:   # 配置触发workflow的事件
   push:
     paths:   # 这里是用来指定哪个文件更改，才会触发的
-      - 'koodo-reader/**'
+      - 'koodo-reader/Dockerfile'
 
 env:
   APP_NAME: koodo-reader
