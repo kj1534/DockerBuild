@@ -37,6 +37,8 @@ jobs:
           file: ./koodo-reader/Dockerfile
           platforms: linux/amd64
           push: true
+          provenance: false
+          sbom: false
           build-args: |
             APP_NAME=${{ env.APP_NAME }}
             APP_VERSION=${{ env.APP_VERSION }}
@@ -73,6 +75,8 @@ jobs:
           file: ./koodo-reader/Dockerfile
           platforms: linux/arm64
           push: true
+          provenance: false
+          sbom: false
           build-args: |
             APP_NAME=${{ env.APP_NAME }}
             APP_VERSION=${{ env.APP_VERSION }}
