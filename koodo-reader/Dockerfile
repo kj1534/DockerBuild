@@ -1,5 +1,5 @@
 FROM node:14-slim as builder
-RUN apt-get update && apt-get install -y jq curl wget python make
+RUN apt-get update && apt-get install -y jq curl wget python build-essential
 WORKDIR /app
 
 ### Get the latest release source code tarball
