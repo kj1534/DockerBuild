@@ -45,7 +45,7 @@ jobs:
             ${{ env.DOCKERHUB_REPO }}:${{ env.APP_VERSION }}-amd64
 
   arm64:
-    runs-on: [self-hosted, linux, ARM64]
+    runs-on: self-hosted
     name: Build Koodo-Reader ARM64 image
     steps:
       - name: Check out the repo
