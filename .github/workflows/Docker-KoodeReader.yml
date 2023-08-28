@@ -36,7 +36,6 @@ jobs:
           context: .
           file: ./koodo-reader/Dockerfile
           platforms: linux/amd64
-          push: true
           provenance: false
           sbom: false
           build-args: |
@@ -74,7 +73,6 @@ jobs:
           context: .
           file: ./koodo-reader/Dockerfile
           platforms: linux/arm64
-          push: true
           provenance: false
           sbom: false
           build-args: |
