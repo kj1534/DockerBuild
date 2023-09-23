@@ -1,5 +1,5 @@
 FROM node:18-slim as builder
-RUN apt-get update && apt-get install -y jq curl wget python make g++
+RUN apt-get update && apt-get install -y jq curl wget python3 make g++
 WORKDIR /app
 
 ### Get the latest release source code tarball
